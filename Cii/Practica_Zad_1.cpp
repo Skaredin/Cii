@@ -8,6 +8,7 @@ void obmen3(int& x, int& y);
 
 void main4() {
     setlocale(LC_ALL, "Russian");// Библеотека русского языка !
+    std::cout << "\033[32mСкаредин А.В. РИЗ-230916у\033[0m" << std::endl; // Зелёный цвет ФИО ГРуппа
     int a = 2, b = 5;
 
     std::cout << "До обмена: a = " << a << ", b = " << b << std::endl;
