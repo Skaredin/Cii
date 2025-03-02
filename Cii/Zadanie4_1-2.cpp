@@ -4,7 +4,7 @@
 
 
 // Вариант 1: Определение длины строки с использованием strlen
-int dlina1(const char* str) {
+ int dlina1(const char* str) {
     return strlen(str);
 }
 
@@ -66,7 +66,7 @@ void dlina(const char* str) {
     std::cout << "Длина строки \"" << str << "\" = " << strlen(str) << std::endl;
 }
 
-int main(void) {
+int main11(void) {
     setlocale(LC_ALL, "Russian"); // Устанавливаем локализацию для русского языка
 
     std::cout << "\033[32mСкаредин А.В. РИЗ-230916у\033[0m" << std::endl; // Зелёный цвет ФИО Группа
