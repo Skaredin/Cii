@@ -309,7 +309,7 @@ void printMatrix(float m[N][N]) {
     }
 }
 
-int main() {
+int main15() {
     setlocale(LC_ALL, "Russian");
     std::cout << "\033[32mÑêàðåäèí À.Â. ÐÈÇ-230916ó\033[0m" << std::endl;
     float m[N][N];
