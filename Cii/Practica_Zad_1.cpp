@@ -6,7 +6,7 @@ void obmen1(int x, int y);
 void obmen2(int* x, int* y);
 void obmen3(int& x, int& y);
 
-void main() {
+void main4() {
     setlocale(LC_ALL, "Russian");// Библеотека русского языка !
     int a = 2, b = 5;
 
