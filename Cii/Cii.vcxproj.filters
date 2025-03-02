@@ -66,5 +66,8 @@
     <ClCompile Include="Zadanie4_4.cpp">
       <Filter>Lab_4</Filter>
     </ClCompile>
+    <ClCompile Include="Zadanie4_5.cpp">
+      <Filter>Lab_4</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

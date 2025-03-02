@@ -28,7 +28,7 @@ void konkat6(char* str1, const char* str2, size_t size) {
     strcat_s(str1, size, str2);
 }
 
-int main() {
+int main13() {
     setlocale(LC_ALL, "Russian"); // Устанавливаем локализацию для русского языка
 
     std::cout << "\033[32mСкаредин А.В. РИЗ-230916у\033[0m" << std::endl; // Зелёный цвет ФИО Группа
