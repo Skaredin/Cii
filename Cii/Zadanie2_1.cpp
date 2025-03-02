@@ -5,7 +5,7 @@
 
 #define N 5  
 
-void main() {
+void main5() {
     float m[N][N];
     int i, j;
 
