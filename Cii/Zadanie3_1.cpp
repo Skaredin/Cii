@@ -1,8 +1,12 @@
 #include <iostream>  // Для использования cout
 #include <conio.h>   // Для использования clrscr() из под Windows не работает !  Использую для очистки cstdlib
 #include <cstdlib>   // Для использования system("CLS")
+#include <locale>// Библеотека русского языка !
 
-void main(void) {
+void main6(void) {
+
+    setlocale(LC_ALL, "Russian");// Библеотека русского языка !
+
     int mas[] = { 2, 5, -8, 1, -4, 6, 3, -5, -9, 13, 0, 4, 9 };  // Массив с числами
     int imin, imax;  // Индексы минимального и максимального элементов
     int n = sizeof(mas) / sizeof(int);  // Количество элементов в массиве
