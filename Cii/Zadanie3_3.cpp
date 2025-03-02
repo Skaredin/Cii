@@ -26,7 +26,8 @@ void printArray1(int mas[], int n) {
 }
 
 int main8() {
-    setlocale(LC_ALL, "Russian");// Библеотека русского языка !
+    setlocale(LC_ALL, "Russian"); // Устанавливаем русскую локаль для поддержки кириллицы в консоли
+    std::cout << "\033[32mСкаредин А.В. РИЗ-230916у\033[0m" << std::endl; // Зелёный цвет ФИО ГРуппа
     int mas[] = { 2, 5, -8, 1, -4, 6, 3, -5, -9, 13, 0, 4, 9 };
     int n = sizeof(mas) / sizeof(int);
 
