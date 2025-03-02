@@ -137,6 +137,7 @@
     <ClCompile Include="Zadanie3_3.cpp" />
     <ClCompile Include="Zadanie3_4.cpp" />
     <ClCompile Include="Zadanie3_5.cpp" />
+    <ClCompile Include="Zadanie4_1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
