@@ -131,6 +131,7 @@
     <ClCompile Include="Zadanie1_1.cpp" />
     <ClCompile Include="Zadanie1_2.cpp" />
     <ClCompile Include="Zadanie1_3.cpp" />
+    <ClCompile Include="Zadanie2_0.cpp" />
     <ClCompile Include="Zadanie2_1.cpp" />
     <ClCompile Include="Zadanie3_1.cpp" />
     <ClCompile Include="Zadanie3_2.cpp" />
