@@ -57,7 +57,7 @@
     <ClCompile Include="Zadanie3_5.cpp">
       <Filter>Lab_3</Filter>
     </ClCompile>
-    <ClCompile Include="Zadanie4_1.cpp">
+    <ClCompile Include="Zadanie4_1-2.cpp">
       <Filter>Lab_4</Filter>
     </ClCompile>
   </ItemGroup>
