@@ -61,7 +61,7 @@ void process_page(FILE* in, FILE* out) {
     }
 }
 
-int main() {
+int main19() {
     setlocale(LC_ALL, "");  // Настройка локализации
     _setmode(_fileno(stdout), _O_U16TEXT);  // Переключение консоли на UTF-16 для вывода Unicode
 

@@ -147,10 +147,12 @@
     <ClCompile Include="Zadanie5_2.cpp" />
     <ClCompile Include="Zadanie5_3.cpp" />
     <ClCompile Include="Zadanie5_4.cpp" />
+    <ClCompile Include="Zadanie5_5.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="output.txt" />
     <Text Include="Processed.txt" />
+    <Text Include="ShifrFile.txt" />
     <Text Include="Test.txt" />
     <Text Include="TestPerenos.txt" />
   </ItemGroup>
