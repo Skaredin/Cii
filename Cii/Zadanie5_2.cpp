@@ -4,7 +4,7 @@
 #include <fcntl.h>
 #include <io.h>
 
-int main(void) {
+int main17(void) {
     setlocale(LC_ALL, ""); // Настройка локализации
     _setmode(_fileno(stdout), _O_U16TEXT); // Переключение консоли на UTF-16 для вывода Unicode
 

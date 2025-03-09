@@ -145,8 +145,10 @@
     <ClCompile Include="Zadanie5_0.cpp" />
     <ClCompile Include="Zadanie5_1.cpp" />
     <ClCompile Include="Zadanie5_2.cpp" />
+    <ClCompile Include="Zadanie5_3.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="output.txt" />
     <Text Include="Test.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

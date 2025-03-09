@@ -1,2 +1,4 @@
 Привет, мир!
 Это тестовый файл.
+Hello, world!
+This is a test file.
