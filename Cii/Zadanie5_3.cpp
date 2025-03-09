@@ -51,7 +51,7 @@ void search_and_maybe_write(FILE* in, const wchar_t* search_string, const char* 
 }
 
 // Основная функция
-int main(void) {
+int main18(void) {
     setlocale(LC_ALL, ""); // Настройка локализации
     _setmode(_fileno(stdout), _O_U16TEXT); // Переключение консоли на UTF-16 для вывода Unicode
 

@@ -90,12 +90,21 @@
     <ClCompile Include="Zadanie5_3.cpp">
       <Filter>Lab_5</Filter>
     </ClCompile>
+    <ClCompile Include="Zadanie5_4.cpp">
+      <Filter>Lab_5</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Test.txt">
       <Filter>Lab_5\File</Filter>
     </Text>
     <Text Include="output.txt">
+      <Filter>Lab_5\File</Filter>
+    </Text>
+    <Text Include="Processed.txt">
+      <Filter>Lab_5\File</Filter>
+    </Text>
+    <Text Include="TestPerenos.txt">
       <Filter>Lab_5\File</Filter>
     </Text>
   </ItemGroup>
