@@ -37,6 +37,9 @@
     <Filter Include="Lab_5\File\ZadFile5_5">
       <UniqueIdentifier>{b0a0cd41-7d9c-42a5-9e50-a5ed9ad360ba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lab_6">
+      <UniqueIdentifier>{7aefc29d-6062-4169-9d23-53d56d84265d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Zadanie1_1.cpp">
@@ -101,6 +104,9 @@
     </ClCompile>
     <ClCompile Include="Zadanie5_5.cpp">
       <Filter>Lab_5</Filter>
+    </ClCompile>
+    <ClCompile Include="Zadanie6_1.cpp">
+      <Filter>Lab_6</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

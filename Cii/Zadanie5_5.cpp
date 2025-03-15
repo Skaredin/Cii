@@ -19,7 +19,7 @@ void encrypt_file(FILE* in, FILE* out, const char* key) {
     }
 }
 
-int main() {
+int main20() {
     setlocale(LC_ALL, ""); // Локализация
 
     char key[256];
