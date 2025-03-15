@@ -1,16 +1,16 @@
-#include "strokaZadanie6_3.h"
+#include "strokaZadanie6_4.h"
 #include <iostream>
 #include <cstring> // для strlen, strcmp, strcpy
 #include <locale> // Для поддержки русского языка
 
-int main23() {
+int main24() {
     setlocale(LC_ALL, "Russian"); // Устанавливаем локализацию для русского языка
 
     // Оформление вывода (зелёный цвет ФИО и группы)
     std::cout << "\033[32mСкаредин А.В. РИЗ-230916у\033[0m" << std::endl;
 
     // Инициализация строк
-    Stroka2 s1("qwerty"), s2("1234567890"), s3, s4(s1), s5;
+    Stroka4 s1("qwerty"), s2("1234567890"), s3, s4(s1), s5;
 
     // Вывод начальных значений строк
     std::cout << "Начальное значение s1= \033[32m" << s1.dlina() << "\033[0m, s2= \033[32m" << s2.dlina() << "\033[0m" << std::endl;
@@ -25,7 +25,7 @@ int main23() {
     s1.sravn(s1.getStr(), s2.getStr()); // Используем метод getStr для доступа к строке
 
     // Копирование s2 в s1
-    
+
     std::cout << "Результат копирования: \033[32ms1= " << s1.getStr() << ", s2= " << s2.getStr() << "\033[0m" << std::endl;
 
     // Длина строк после копирования
@@ -40,7 +40,7 @@ int main23() {
     std::cout << std::endl;
 
     // Присваивание s1 новой строки
-    
+
     std::cout << "Результат сравнения: \033[32ms1= " << s1.getStr() << ", s2= " << s2.getStr() << "\033[0m" << std::endl;
 
     // Длина строк после присваивания

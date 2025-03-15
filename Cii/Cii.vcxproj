@@ -129,9 +129,11 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainZadanie6_3.cpp" />
+    <ClCompile Include="mainZadanie6_4.cpp" />
     <ClCompile Include="Practica_Zad_1.cpp" />
     <ClCompile Include="stroka.cpp" />
     <ClCompile Include="strokaZadanie6_3.cpp" />
+    <ClCompile Include="strokaZadanie6_4.cpp" />
     <ClCompile Include="Zadanie1_1.cpp" />
     <ClCompile Include="Zadanie1_2.cpp" />
     <ClCompile Include="Zadanie1_3.cpp" />
@@ -165,6 +167,7 @@
   <ItemGroup>
     <ClInclude Include="stroka.h" />
     <ClInclude Include="strokaZadanie6_3.h" />
+    <ClInclude Include="strokaZadanie6_4.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
