@@ -119,5 +119,8 @@
     <Text Include="ShifrFile.txt">
       <Filter>Lab_5\File\ZadFile5_5</Filter>
     </Text>
+    <Text Include="ShifrFile1.txt">
+      <Filter>Lab_5\File\ZadFile5_5</Filter>
+    </Text>
   </ItemGroup>
 </Project>

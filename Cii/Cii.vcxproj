@@ -153,6 +153,7 @@
     <Text Include="output.txt" />
     <Text Include="Processed.txt" />
     <Text Include="ShifrFile.txt" />
+    <Text Include="ShifrFile1.txt" />
     <Text Include="Test.txt" />
     <Text Include="TestPerenos.txt" />
   </ItemGroup>

@@ -3,38 +3,35 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+//Ключ шифрования c=c^key[i]
+
 // Функция для шифрования
 void encrypt_file(FILE* in, FILE* out, const char* key) {
-    unsigned char ch;
-    size_t key_len = strlen(key);  // Длина ключа
-    size_t key_index = 0;  // Индекс для ключа
+    int ch;  // Должен быть int, чтобы корректно обрабатывать EOF
+    size_t key_len = strlen(key);
+    size_t key_index = 0;
 
-    // Чтение символов из входного файла и запись в выходной
-    while ((ch = fgetc(in)) != EOF) {
-        // Шифруем символ с использованием символа из ключа
-        unsigned char encrypted_char = ch ^ key[key_index];
-
-        // Записываем зашифрованный символ в выходной файл
-        fputc(encrypted_char, out);
-
-        // Переходим к следующему символу в ключе, если он есть
-        key_index = (key_index + 1) % key_len;
+    while ((ch = fgetc(in)) != EOF) {  // Читаем байт
+        unsigned char encrypted_char = (unsigned char)ch ^ key[key_index];  // XOR с ключом
+        fputc(encrypted_char, out);  // Записываем в файл
+        key_index = (key_index + 1) % key_len;  // Переход к следующему символу ключа
     }
 }
 
-int main(int argc, char* argv[]) {
-    setlocale(LC_ALL, ""); // Настройка локализации
+int main() {
+    setlocale(LC_ALL, ""); // Локализация
 
-    char key[256];  // Буфер для ключа
+    char key[256];
 
-    // Просим пользователя ввести ключ шифрования
+    // Ввод ключа
     printf("Введите ключ шифрования: ");
     if (fgets(key, sizeof(key), stdin) == NULL) {
         printf("Ошибка при вводе ключа.\n");
         return 1;
     }
 
-    // Убираем символ новой строки в конце
+    // Убираем символ новой строки
     key[strcspn(key, "\n")] = '\0';
 
     if (strlen(key) == 0) {
@@ -42,25 +39,29 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
+
+
+    const char* input_file = "C:\\Users\\Admin\\source\\repos\\Cii\\Cii\\ShifrFile.txt";
+    // Фаил который обработал второй раз(1 раз зашифровал(ShifrFile), а второй раз расшифровал и создал ещё один text с названием (ShifrFile1))
+    const char* output_file = "C:\\Users\\Admin\\source\\repos\\Cii\\Cii\\ShifrFile1.txt";
+
     FILE* in;
     FILE* out;
-    const char* input_file = "C:\\Users\\Admin\\source\\repos\\Cii\\Cii\\output.txt";  // Путь к исходному файлу
-    const char* output_file = "C:\\Users\\Admin\\source\\repos\\Cii\\Cii\\ShifrFile.txt";  // Путь к файлу для записи зашифрованного текста
 
-    // Используем fopen_s для безопасного открытия файлов
-    if (fopen_s(&in, input_file, "r") != 0) {
+    // Открываем входной файл в бинарном режиме
+    if (fopen_s(&in, input_file, "rb") != 0) {
         perror("Ошибка открытия исходного файла");
         return 1;
     }
 
-    // Открытие файла для записи результата
-    if (fopen_s(&out, output_file, "w") != 0) {
+    // Открываем выходной файл в бинарном режиме
+    if (fopen_s(&out, output_file, "wb") != 0) {
         perror("Ошибка открытия файла для записи");
         fclose(in);
         return 1;
     }
 
-    // Шифрование файла
+    // Запускаем шифрование
     encrypt_file(in, out, key);
 
     fclose(in);
