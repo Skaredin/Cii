@@ -43,6 +43,9 @@
     <Filter Include="Lab_6\Zadanie6_2">
       <UniqueIdentifier>{50e0e349-bfa5-409f-a8c8-e467ccd9bc0d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lab_6\Zadanie6_3">
+      <UniqueIdentifier>{b0ef8333-7369-4591-bcd5-b6852c56d334}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Zadanie1_1.cpp">
@@ -117,6 +120,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Lab_6\Zadanie6_2</Filter>
     </ClCompile>
+    <ClCompile Include="strokaZadanie6_3.cpp">
+      <Filter>Lab_6\Zadanie6_3</Filter>
+    </ClCompile>
+    <ClCompile Include="mainZadanie6_3.cpp">
+      <Filter>Lab_6\Zadanie6_3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Test.txt">
@@ -141,6 +150,9 @@
   <ItemGroup>
     <ClInclude Include="stroka.h">
       <Filter>Lab_6\Zadanie6_2</Filter>
+    </ClInclude>
+    <ClInclude Include="strokaZadanie6_3.h">
+      <Filter>Lab_6\Zadanie6_3</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

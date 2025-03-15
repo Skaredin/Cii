@@ -2,7 +2,7 @@
 #include <cstring> // для strlen, strcmp, strcpy
 #include <locale> // Для поддержки русского языка
 
-int main() {
+int main22() {
     setlocale(LC_ALL, "Russian"); // Устанавливаем локализацию для русского языка
 
     std::cout << "\033[32mСкаредин А.В. РИЗ-230916у\033[0m" << std::endl; // Зелёный цвет ФИО Группа
