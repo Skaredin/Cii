@@ -77,7 +77,7 @@ public:
 };
 
 // Тестирование класса
-int main() {
+int main21() {
 
     String s1("Hello");
     String s2(" Hello");

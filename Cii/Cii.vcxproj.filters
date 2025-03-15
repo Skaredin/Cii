@@ -108,6 +108,9 @@
     <ClCompile Include="Zadanie6_1.cpp">
       <Filter>Lab_6</Filter>
     </ClCompile>
+    <ClCompile Include="Zadanie6_2.cpp">
+      <Filter>Lab_6</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Test.txt">
