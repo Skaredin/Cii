@@ -127,7 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Practica_Zad_1.cpp" />
+    <ClCompile Include="stroka.cpp" />
     <ClCompile Include="Zadanie1_1.cpp" />
     <ClCompile Include="Zadanie1_2.cpp" />
     <ClCompile Include="Zadanie1_3.cpp" />
@@ -149,7 +151,6 @@
     <ClCompile Include="Zadanie5_4.cpp" />
     <ClCompile Include="Zadanie5_5.cpp" />
     <ClCompile Include="Zadanie6_1.cpp" />
-    <ClCompile Include="Zadanie6_2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="output.txt" />
@@ -158,6 +159,9 @@
     <Text Include="ShifrFile1.txt" />
     <Text Include="Test.txt" />
     <Text Include="TestPerenos.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stroka.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

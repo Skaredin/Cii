@@ -40,6 +40,9 @@
     <Filter Include="Lab_6">
       <UniqueIdentifier>{7aefc29d-6062-4169-9d23-53d56d84265d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lab_6\Zadanie6_2">
+      <UniqueIdentifier>{50e0e349-bfa5-409f-a8c8-e467ccd9bc0d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Zadanie1_1.cpp">
@@ -108,8 +111,11 @@
     <ClCompile Include="Zadanie6_1.cpp">
       <Filter>Lab_6</Filter>
     </ClCompile>
-    <ClCompile Include="Zadanie6_2.cpp">
-      <Filter>Lab_6</Filter>
+    <ClCompile Include="stroka.cpp">
+      <Filter>Lab_6\Zadanie6_2</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Lab_6\Zadanie6_2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -131,5 +137,10 @@
     <Text Include="ShifrFile1.txt">
       <Filter>Lab_5\File\ZadFile5_5</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stroka.h">
+      <Filter>Lab_6\Zadanie6_2</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
