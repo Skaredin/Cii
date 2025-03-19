@@ -157,6 +157,8 @@
     <ClCompile Include="Zadanie6_1.cpp" />
     <ClCompile Include="Zadanie7_1.cpp" />
     <ClCompile Include="Zadanie8_1.cpp" />
+    <ClCompile Include="Zadanie8_2.cpp" />
+    <ClCompile Include="Zadanie8_3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="output.txt" />
@@ -165,6 +167,8 @@
     <Text Include="ShifrFile1.txt" />
     <Text Include="Test.txt" />
     <Text Include="TestPerenos.txt" />
+    <Text Include="Zadanie8_2.txt" />
+    <Text Include="Zadanie8_3.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stroka.h" />

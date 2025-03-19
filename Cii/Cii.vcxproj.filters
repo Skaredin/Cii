@@ -55,6 +55,9 @@
     <Filter Include="Lab_8">
       <UniqueIdentifier>{9a694245-78c0-4890-9083-289c6ce26bed}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lab_8\File">
+      <UniqueIdentifier>{d6b7af2a-ea1b-49cd-b706-c8c46547f2df}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Zadanie1_1.cpp">
@@ -147,6 +150,12 @@
     <ClCompile Include="Zadanie8_1.cpp">
       <Filter>Lab_8</Filter>
     </ClCompile>
+    <ClCompile Include="Zadanie8_2.cpp">
+      <Filter>Lab_8</Filter>
+    </ClCompile>
+    <ClCompile Include="Zadanie8_3.cpp">
+      <Filter>Lab_8</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Test.txt">
@@ -166,6 +175,12 @@
     </Text>
     <Text Include="ShifrFile1.txt">
       <Filter>Lab_5\File\ZadFile5_5</Filter>
+    </Text>
+    <Text Include="Zadanie8_2.txt">
+      <Filter>Lab_8\File</Filter>
+    </Text>
+    <Text Include="Zadanie8_3.txt">
+      <Filter>Lab_8\File</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>

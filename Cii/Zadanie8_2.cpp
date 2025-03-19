@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <cstring>
 #include <locale> // Для поддержки русского языка
 
@@ -9,7 +10,6 @@ private:
     char* str;  // Динамический массив символов
     int length; // Длина строки
 public:
-
     // Конструктор по умолчанию
     Stroka3() : str(new char[1]), length(0) { str[0] = '\0'; }
 
@@ -59,21 +59,59 @@ public:
         out << s.str;
         return out;
     }
+
+    // Перегрузка оператора вывода в файл
+    friend ofstream& operator<<(ofstream& out, const Stroka3& s) {
+        out << s.str;
+        return out;
+    }
+
+    // Перегрузка оператора ввода из файла
+    friend ifstream& operator>>(ifstream& in, Stroka3& s) {
+        char buffer[256]; // Буфер для ввода строки
+        in.getline(buffer, 256);
+        s.length = strlen(buffer);
+        delete[] s.str;
+        s.str = new char[s.length + 1];
+        strcpy_s(s.str, s.length + 1, buffer);
+        return in;
+    }
 };
 
-int main26() {
+int main27() {
     setlocale(LC_ALL, "Russian"); // Устанавливаем локализацию для русского языка
-
     // Оформление вывода (зелёный цвет ФИО и группы)
     std::cout << "\033[32mСкаредин А.В. РИЗ-230916у\033[0m" << std::endl;
     Stroka3 s1, s2("Hello, world!");
 
+    // Ввод строки
     cout << "Введите строку: ";
-    cin >> s1;  // Ввод строки с клавиатуры
-
+    cin >> s1;
     cout << "Вы ввели: " << s1 << endl; // Вывод строки
 
-    cout << "Пример заранее заданной строки: " << s2 << endl;
+    // Запись в файл
+    ofstream outFile("Zadanie8_2.txt");
+    if (outFile.is_open()) {
+        outFile << s1 << endl;
+        outFile << s2 << endl;
+        outFile.close();
+        cout << "Строки записаны в файл Zadanie8_2.txt" << endl;
+    }
+    else {
+        cout << "Не удалось открыть файл для записи!" << endl;
+    }
+
+    // Чтение из файла
+    ifstream inFile("Zadanie8_2.txt");
+    if (inFile.is_open()) {
+        Stroka3 fileString;
+        inFile >> fileString;
+        cout << "Строка из файла: " << fileString << endl;
+        inFile.close();
+    }
+    else {
+        cout << "Не удалось открыть файл для чтения!" << endl;
+    }
 
     return 0;
 }
