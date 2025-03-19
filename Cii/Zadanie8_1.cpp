@@ -1,0 +1,79 @@
+#include <iostream>
+#include <cstring>
+#include <locale> // Для поддержки русского языка
+
+using namespace std;
+
+class Stroka3 {
+private:
+    char* str;  // Динамический массив символов
+    int length; // Длина строки
+public:
+
+    // Конструктор по умолчанию
+    Stroka3() : str(new char[1]), length(0) { str[0] = '\0'; }
+
+    // Конструктор с параметром
+    Stroka3(const char* s) {
+        length = strlen(s);
+        str = new char[length + 1];
+        strcpy_s(str, length + 1, s); // Используем strcpy_s
+    }
+
+    // Конструктор копирования
+    Stroka3(const Stroka3& other) {
+        length = other.length;
+        str = new char[length + 1];
+        strcpy_s(str, length + 1, other.str);
+    }
+
+    // Оператор присваивания
+    Stroka3& operator=(const Stroka3& other) {
+        if (this != &other) {
+            delete[] str;
+            length = other.length;
+            str = new char[length + 1];
+            strcpy_s(str, length + 1, other.str);
+        }
+        return *this;
+    }
+
+    // Деструктор
+    ~Stroka3() {
+        delete[] str;
+    }
+
+    // Перегрузка оператора ввода
+    friend istream& operator>>(istream& in, Stroka3& s) {
+        char buffer[256]; // Буфер для ввода строки
+        in.getline(buffer, 256);
+        s.length = strlen(buffer);
+        delete[] s.str; // Удаляем старую строку
+        s.str = new char[s.length + 1];
+        strcpy_s(s.str, s.length + 1, buffer);
+        return in;
+    }
+
+    // Перегрузка оператора вывода
+    friend ostream& operator<<(ostream& out, const Stroka3& s) {
+        out << s.str;
+        return out;
+    }
+};
+
+int main() {
+    setlocale(LC_ALL, "Russian"); // Устанавливаем локализацию для русского языка
+
+    // Оформление вывода (зелёный цвет ФИО и группы)
+    std::cout << "\033[32mСкаредин А.В. РИЗ-230916у\033[0m" << std::endl;
+    Stroka3 s1, s2("Hello, world!");
+
+    cout << "Введите строку: ";
+    cin >> s1;  // Ввод строки с клавиатуры
+
+    cout << "Вы ввели: " << s1 << endl; // Вывод строки
+
+    cout << "Пример заранее заданной строки: " << s2 << endl;
+
+    return 0;
+}
