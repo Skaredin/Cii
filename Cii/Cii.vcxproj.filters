@@ -49,6 +49,9 @@
     <Filter Include="Lab_6\Zadanie6_4">
       <UniqueIdentifier>{962c04de-8707-412d-bddc-1c95b5cd7099}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lab_7">
+      <UniqueIdentifier>{ce946af2-718e-41ac-b4cb-05304674c2f3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Zadanie1_1.cpp">
@@ -134,6 +137,9 @@
     </ClCompile>
     <ClCompile Include="strokaZadanie6_4.cpp">
       <Filter>Lab_6\Zadanie6_4</Filter>
+    </ClCompile>
+    <ClCompile Include="Zadanie7_1.cpp">
+      <Filter>Lab_7</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
