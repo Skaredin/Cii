@@ -22,7 +22,7 @@ void encrypt_file(ifstream& in, ofstream& out, const string& key) {
     }
 }
 
-int main() {
+int main28() {
     setlocale(LC_ALL, "Russian"); // Устанавливаем локализацию для русского языка
     // Оформление вывода (зелёный цвет ФИО и группы)
     std::cout << "\033[32mСкаредин А.В. РИЗ-230916у\033[0m" << std::endl;

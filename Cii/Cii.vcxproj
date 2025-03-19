@@ -159,6 +159,7 @@
     <ClCompile Include="Zadanie8_1.cpp" />
     <ClCompile Include="Zadanie8_2.cpp" />
     <ClCompile Include="Zadanie8_3.cpp" />
+    <ClCompile Include="Zadanie8_4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="output.txt" />
