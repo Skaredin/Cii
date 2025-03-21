@@ -134,6 +134,9 @@
     <ClCompile Include="stroka.cpp" />
     <ClCompile Include="strokaZadanie6_3.cpp" />
     <ClCompile Include="strokaZadanie6_4.cpp" />
+    <ClCompile Include="Zadanie10_1.cpp" />
+    <ClCompile Include="Zadanie10_2.cpp" />
+    <ClCompile Include="Zadanie10_3.cpp" />
     <ClCompile Include="Zadanie1_1.cpp" />
     <ClCompile Include="Zadanie1_2.cpp" />
     <ClCompile Include="Zadanie1_3.cpp" />
@@ -163,6 +166,7 @@
     <ClCompile Include="Zadanie9_1.cpp" />
     <ClCompile Include="Zadanie9_2.2.2.cpp" />
     <ClCompile Include="Zadanie9_2.cpp" />
+    <ClCompile Include="Zadanie9_3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="output.txt" />

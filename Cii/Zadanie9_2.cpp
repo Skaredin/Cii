@@ -15,7 +15,7 @@ T getmax(T t[], int size)
         if (t[i] > retval) retval = t[i];
     return retval;
 }
-void main(void)
+void main32(void)
 {
     int i1 = 3, i2 = 5;
     int mas[] = { 3, 9, 5, 8 };

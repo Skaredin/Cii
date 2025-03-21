@@ -61,6 +61,9 @@
     <Filter Include="Lab_9">
       <UniqueIdentifier>{deb36fce-4f8d-4b0a-8226-0c7efb142786}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lab_10">
+      <UniqueIdentifier>{0d791bff-7825-4ee6-9222-af7a3d6a91a9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Zadanie1_1.cpp">
@@ -170,6 +173,18 @@
     </ClCompile>
     <ClCompile Include="Zadanie9_2.cpp">
       <Filter>Lab_9</Filter>
+    </ClCompile>
+    <ClCompile Include="Zadanie9_3.cpp">
+      <Filter>Lab_9</Filter>
+    </ClCompile>
+    <ClCompile Include="Zadanie10_1.cpp">
+      <Filter>Lab_10</Filter>
+    </ClCompile>
+    <ClCompile Include="Zadanie10_2.cpp">
+      <Filter>Lab_10</Filter>
+    </ClCompile>
+    <ClCompile Include="Zadanie10_3.cpp">
+      <Filter>Lab_10</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

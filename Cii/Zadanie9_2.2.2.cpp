@@ -19,7 +19,7 @@ T getmax(T t[], size_t size) {
         if (t[i] > retval) retval = t[i];
     return retval;
 }
-void main(void)
+void main31(void)
 {
     setlocale(LC_ALL, "");
     int i1 = 3, i2 = 5;
